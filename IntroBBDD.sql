@@ -24,4 +24,10 @@ WHERE aircraft_code = '733'
 ORDER BY scheduled_departure DESC;
 
 
+--5. Escribe una consulta que te muestre la información detallada de los tickets que han comprado las personas que se llaman Irina.
+
+SELECT * 
+FROM tickets 
+WHERE LOWER(passenger_name)  LIKE('%irina%');
+
 
