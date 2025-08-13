@@ -11,6 +11,17 @@ SELECT  *
 FROM bookings 
 WHERE total_amount > 1000000;
 
+--3.Escribe una consulta que extraiga todas las columnas de los datos de los modelos de aviones disponibles (aircraft_data).
+
+SELECT  * 
+FROM aircrafts_data;
+
+--4.  Con el resultado anterior visualizado previamente, escribe una consulta que extraiga los identificadores de vuelo que han volado con un Boeing 737. (Código Modelo Avión = 733)
+
+SELECT flight_id,flight_no
+FROM flights 
+WHERE aircraft_code = '733'
+ORDER BY scheduled_departure DESC;
 
 
 
